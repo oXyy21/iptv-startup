@@ -8,7 +8,14 @@ export const metadata: Metadata = {
   description: "Complete your order securely.",
 }
 
-export default function CheckoutPage() {
+type Props = {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export default async function CheckoutPage({ searchParams }: Props) {
+  const params = await searchParams;
+  const plan = (params.plan as string) || "12m";
+
   return (
     <div className="container mx-auto px-6 py-24 max-w-3xl">
       <div className="text-center mb-12">
@@ -50,7 +57,7 @@ export default function CheckoutPage() {
               <h2 className="text-xl font-bold text-lime-500">3. Select Package</h2>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">Subscription Plan</label>
-                <select className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+                <select defaultValue={plan} className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
                   <option value="12m">12 Months Premium - $59.99 (Best Value)</option>
                   <option value="6m">6 Months Premium - $49.99</option>
                   <option value="3m">3 Months Premium - $34.99</option>
