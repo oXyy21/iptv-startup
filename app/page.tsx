@@ -3,6 +3,7 @@ import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ShieldCheck, MonitorPlay, Zap, ShoppingCart, UserPlus, Download, PlayCircle, Tv, Smartphone, Tablet, Laptop } from "lucide-react"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export const metadata: Metadata = {
   title: "IPTV Startup | Premium 4K Streaming",
@@ -140,7 +141,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. CTA / DEVICE SUPPORT SECTION */}
+      {/* 4. FREQUENTLY ASKED QUESTIONS */}
+      <section className="py-24 px-6 container mx-auto max-w-4xl">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4 text-white">Support & Ticketing</h2>
+          <p className="text-slate-300 text-lg">Quick answers to common questions about troubleshooting, VPNs, and billing.</p>
+        </div>
+
+        <Accordion type="single" collapsible className="w-full space-y-4">
+          <AccordionItem value="item-1" className="bg-slate-900 border border-slate-800 rounded-lg px-6 border-b-0">
+            <AccordionTrigger className="text-lg font-bold text-white hover:text-lime-500 hover:no-underline">I'm experiencing buffering, how do I fix it?</AccordionTrigger>
+            <AccordionContent className="text-slate-300 text-base pb-6">
+              Buffering is most commonly caused by internet speed fluctuations or ISP throttling. We recommend resetting your router, hardwiring your device via Ethernet instead of WiFi, and ensuring you have at least a 25Mbps connection. If issues persist, please open a support ticket.
+            </AccordionContent>
+          </AccordionItem>
+          
+          <AccordionItem value="item-2" className="bg-slate-900 border border-slate-800 rounded-lg px-6 border-b-0">
+            <AccordionTrigger className="text-lg font-bold text-white hover:text-lime-500 hover:no-underline">Do you support VPN usage?</AccordionTrigger>
+            <AccordionContent className="text-slate-300 text-base pb-6">
+              Yes! In fact, we highly recommend using a premium VPN to prevent your Internet Service Provider from throttling your IPTV traffic. Our service is fully compatible with all major VPN providers like ExpressVPN, NordVPN, and Surfshark.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-3" className="bg-slate-900 border border-slate-800 rounded-lg px-6 border-b-0">
+            <AccordionTrigger className="text-lg font-bold text-white hover:text-lime-500 hover:no-underline">How do I manage my billing or request a refund?</AccordionTrigger>
+            <AccordionContent className="text-slate-300 text-base pb-6">
+              You can cancel or upgrade your subscription at any time directly through your account dashboard. We offer a 7-day money-back guarantee for all new subscriptions. If you're not satisfied, simply contact our billing department via the Contact page.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-4" className="bg-slate-900 border border-slate-800 rounded-lg px-6 border-b-0">
+            <AccordionTrigger className="text-lg font-bold text-white hover:text-lime-500 hover:no-underline">How long does setup take after payment?</AccordionTrigger>
+            <AccordionContent className="text-slate-300 text-base pb-6">
+              Setup is instant! As soon as your payment is securely processed, your login credentials and a quick-start guide will be immediately sent to your registered email address so you can start streaming right away.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        
+        <div className="mt-12 text-center">
+          <p className="text-slate-400 mb-4">Still need help? Our technical team is available 24/7.</p>
+          <Link href="/contact" className={buttonVariants({ variant: "outline", className: "text-white border-slate-700 hover:bg-slate-800" })}>
+            Open a Support Ticket
+          </Link>
+        </div>
+      </section>
+
+      {/* 5. CTA / DEVICE SUPPORT SECTION */}
       <section className="py-24 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 p-10 md:p-20 text-center">
