@@ -148,7 +148,7 @@ export default function Home() {
           <p className="text-slate-300 text-lg">Quick answers to common questions about troubleshooting, VPNs, and billing.</p>
         </div>
 
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        <Accordion className="w-full space-y-4">
           <AccordionItem value="item-1" className="bg-slate-900 border border-slate-800 rounded-lg px-6 border-b-0">
             <AccordionTrigger className="text-lg font-bold text-white hover:text-lime-500 hover:no-underline">I'm experiencing buffering, how do I fix it?</AccordionTrigger>
             <AccordionContent className="text-slate-300 text-base pb-6">
