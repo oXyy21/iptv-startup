@@ -67,6 +67,7 @@ export default function RootLayout({
             <nav className="hidden md:flex flex-1 items-center justify-center gap-6 text-sm font-medium text-slate-300">
               <Link href="/#features" className="hover:text-white transition-colors">Features</Link>
               <Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
               <Link href="/about" className="hover:text-white transition-colors">About</Link>
               <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
             </nav>
