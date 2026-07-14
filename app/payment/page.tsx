@@ -9,6 +9,15 @@ import { Lock, CreditCard } from "lucide-react"
 
 export default function PaymentPage() {
   const [isProcessing, setIsProcessing] = useState(false)
+  const [expDate, setExpDate] = useState("")
+
+  const handleExpDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let value = e.target.value.replace(/\D/g, "")
+    if (value.length >= 2) {
+      value = value.slice(0, 2) + "/" + value.slice(2, 4)
+    }
+    setExpDate(value)
+  }
 
   const handlePayment = (e: React.FormEvent) => {
     e.preventDefault()
@@ -24,6 +33,7 @@ export default function PaymentPage() {
       // Reset form (optional)
       const target = e.target as HTMLFormElement;
       target.reset();
+      setExpDate("");
     }, 2000)
   }
 
@@ -60,7 +70,7 @@ export default function PaymentPage() {
             <div className="grid grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">Expiration Date</label>
-                <Input required type="text" pattern="(0[1-9]|1[0-2])\/\d{2}" title="Please enter in MM/YY format" className="bg-slate-950 border-slate-800 h-12" placeholder="MM/YY" maxLength={5} />
+                <Input required value={expDate} onChange={handleExpDateChange} type="text" pattern="(0[1-9]|1[0-2])\/\d{2}" title="Please enter in MM/YY format" className="bg-slate-950 border-slate-800 h-12" placeholder="MM/YY" maxLength={5} />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">CVV / CVC</label>
