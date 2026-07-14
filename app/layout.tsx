@@ -71,9 +71,6 @@ export default function RootLayout({
 
             {/* Right: Buttons */}
             <div className="flex-1 flex items-center justify-end gap-4">
-              <Link href="/login" className={buttonVariants({ variant: "ghost", className: "text-slate-300 hover:text-white" })}>
-                Log In
-              </Link>
               <Link href="/checkout" className={buttonVariants({ className: "bg-lime-500 text-slate-950 hover:bg-lime-600 font-bold" })}>
                 Start Free Trial
               </Link>
