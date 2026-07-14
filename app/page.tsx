@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ShieldCheck, MonitorPlay, Zap } from "lucide-react"
+import { ShieldCheck, MonitorPlay, Zap, ShoppingCart, UserPlus, Download, PlayCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "IPTV Startup | Premium 4K Streaming",
@@ -81,6 +81,62 @@ export default function Home() {
               </p>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* 3. HOW IT WORKS */}
+      <section className="py-24 px-6 bg-slate-900 border-t border-slate-800">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4 text-white">How It Works</h2>
+            <p className="text-slate-300 text-lg max-w-2xl mx-auto">Get started with premium streaming in 4 simple steps. No technical skills required.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 relative">
+            {/* Connecting Line (hidden on mobile) */}
+            <div className="hidden md:block absolute top-12 left-[12%] right-[12%] h-[2px] bg-slate-800"></div>
+
+            {/* Step 1 */}
+            <div className="relative flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-slate-950 border-4 border-slate-800 rounded-full flex items-center justify-center relative z-10 mb-6">
+                <ShoppingCart className="w-10 h-10 text-lime-500" />
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-lime-500 text-slate-950 font-bold rounded-full flex items-center justify-center border-4 border-slate-900">1</div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Choose Your Plan</h3>
+              <p className="text-slate-400 text-sm">Select the perfect package that fits your needs and budget.</p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-slate-950 border-4 border-slate-800 rounded-full flex items-center justify-center relative z-10 mb-6">
+                <UserPlus className="w-10 h-10 text-lime-500" />
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-lime-500 text-slate-950 font-bold rounded-full flex items-center justify-center border-4 border-slate-900">2</div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Create Account</h3>
+              <p className="text-slate-400 text-sm">Quick and secure registration process to get instant access.</p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-slate-950 border-4 border-slate-800 rounded-full flex items-center justify-center relative z-10 mb-6">
+                <Download className="w-10 h-10 text-lime-500" />
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-lime-500 text-slate-950 font-bold rounded-full flex items-center justify-center border-4 border-slate-900">3</div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Download App</h3>
+              <p className="text-slate-400 text-sm">Install our app on your Smart TV, mobile, tablet, or PC.</p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="relative flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-slate-950 border-4 border-slate-800 rounded-full flex items-center justify-center relative z-10 mb-6">
+                <PlayCircle className="w-10 h-10 text-lime-500" />
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-lime-500 text-slate-950 font-bold rounded-full flex items-center justify-center border-4 border-slate-900">4</div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Start Streaming</h3>
+              <p className="text-slate-400 text-sm">Log in and enjoy unlimited access to channels and VODs.</p>
+            </div>
+
+          </div>
         </div>
       </section>
 
