@@ -57,9 +57,8 @@ export default function RootLayout({
           <div className="container mx-auto px-6 h-16 flex items-center justify-between">
             {/* Left: Logo */}
             <div className="flex-1">
-              <Link href="/" className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-                <span className="w-8 h-8 bg-lime-500 rounded-md flex items-center justify-center text-slate-950">📺</span>
-                IPTV Startup
+              <Link href="/" className="flex items-center gap-2 group">
+                <img src="/logo.png" alt="IPTV Startup Logo" className="h-12 w-auto transition-transform group-hover:scale-105" />
               </Link>
             </div>
 
@@ -90,7 +89,9 @@ export default function RootLayout({
           <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
             {/* Col 1: Brand */}
             <div>
-              <h4 className="text-white text-lg font-bold mb-4">IPTV Startup</h4>
+              <Link href="/" className="flex items-center gap-2 mb-6">
+                <img src="/logo.png" alt="IPTV Startup Logo" className="h-14 w-auto" />
+              </Link>
               <p className="text-sm mb-4">The ultimate 4K streaming experience across all your devices.</p>
               <address className="not-italic text-sm">
                 123 Streaming Way<br />
