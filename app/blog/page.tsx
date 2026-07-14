@@ -10,11 +10,16 @@ export const metadata = {
 export default function BlogIndexPage() {
   const slugs = getAllPostSlugs("blog")
   
-  // Fetch full post data and sort by date (descending)
-  const posts = slugs
-    .map((slug) => ({ slug, ...getPostBySlug("blog", slug) }))
-    .filter((post) => post.meta) // ensure valid post
-    .sort((a, b) => new Date(b.meta.date || 0).getTime() - new Date(a.meta.date || 0).getTime())
+  const posts: ({ slug: string; meta: any; content: string })[] = []
+  
+  slugs.forEach((slug) => {
+    const post = getPostBySlug("blog", slug)
+    if (post) {
+      posts.push({ slug, ...post })
+    }
+  })
+
+  posts.sort((a, b) => new Date(b.meta?.date || 0).getTime() - new Date(a.meta?.date || 0).getTime())
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-24 pb-24 px-6 flex-1">
