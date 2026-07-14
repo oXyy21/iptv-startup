@@ -76,24 +76,21 @@ export default function PricingPage() {
           </CardContent>
         </Card>
 
-        {/* 12 Months (Most Popular) */}
-        <Card className="bg-slate-800 border-lime-500 text-white flex flex-col p-6 relative shadow-2xl shadow-lime-900/20 scale-105 z-10">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-lime-500 text-slate-950 px-4 py-1 rounded-full text-sm font-extrabold uppercase tracking-wide whitespace-nowrap">
-            Best Value - Save 57%
-          </div>
+        {/* 12 Months */}
+        <Card className="bg-slate-900 border-slate-800 text-white flex flex-col p-6">
           <CardHeader className="p-0 mb-6 mt-2">
             <CardTitle className="text-2xl font-bold">12 Months</CardTitle>
             <div className="text-4xl font-extrabold mt-4">$59.99</div>
             <div className="text-sm text-slate-400 line-through">$179.88</div>
           </CardHeader>
           <CardContent className="p-0 flex-1 flex flex-col">
-            <ul className="space-y-4 mb-8 text-slate-200 flex-1">
+            <ul className="space-y-4 mb-8 text-slate-300 flex-1">
               <li className="flex items-center gap-3"><Check className="w-5 h-5 text-lime-500"/> 4K/FHD Quality</li>
               <li className="flex items-center gap-3"><Check className="w-5 h-5 text-lime-500"/> Anti-Freeze Tech</li>
               <li className="flex items-center gap-3"><Check className="w-5 h-5 text-lime-500"/> 2 Connections</li>
               <li className="flex items-center gap-3"><Check className="w-5 h-5 text-lime-500"/> Priority Support</li>
             </ul>
-            <Link href="/checkout?plan=12m" className={buttonVariants({ size: "lg", className: "w-full text-lg font-bold" })}>
+            <Link href="/checkout?plan=12m" className={buttonVariants({ variant: "outline", size: "lg", className: "w-full text-lg font-bold" })}>
               Choose 12 Months
             </Link>
           </CardContent>
