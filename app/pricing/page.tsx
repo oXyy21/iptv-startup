@@ -25,6 +25,7 @@ export default function PricingPage() {
           <CardHeader className="p-0 mb-6">
             <CardTitle className="text-2xl font-bold">1 Month</CardTitle>
             <div className="text-4xl font-extrabold mt-4">$14.99</div>
+            <div className="text-sm text-transparent select-none">$0.00</div>
           </CardHeader>
           <CardContent className="p-0 flex-1 flex flex-col">
             <ul className="space-y-4 mb-8 text-slate-300 flex-1">
@@ -78,7 +79,7 @@ export default function PricingPage() {
 
         {/* 12 Months */}
         <Card className="bg-slate-900 border-slate-800 text-white flex flex-col p-6">
-          <CardHeader className="p-0 mb-6 mt-2">
+          <CardHeader className="p-0 mb-6">
             <CardTitle className="text-2xl font-bold">12 Months</CardTitle>
             <div className="text-4xl font-extrabold mt-4">$59.99</div>
             <div className="text-sm text-slate-400 line-through">$179.88</div>
