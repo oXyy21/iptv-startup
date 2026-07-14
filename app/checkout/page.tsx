@@ -31,7 +31,7 @@ export default async function CheckoutPage({ searchParams }: Props) {
               <h2 className="text-xl font-bold text-lime-500">1. Account Details</h2>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">Email Address (For login delivery)</label>
-                <Input type="email" required className="bg-slate-950 border-slate-800 h-12" placeholder="your@email.com" />
+                <Input type="email" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid full email address (e.g., yourname@gmail.com)" className="bg-slate-950 border-slate-800 h-12" placeholder="your@email.com" />
               </div>
             </div>
 
