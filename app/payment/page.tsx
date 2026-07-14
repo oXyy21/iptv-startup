@@ -10,6 +10,16 @@ import { Lock, CreditCard } from "lucide-react"
 export default function PaymentPage() {
   const [isProcessing, setIsProcessing] = useState(false)
   const [expDate, setExpDate] = useState("")
+  const [cvv, setCvv] = useState("")
+  const [cardNumber, setCardNumber] = useState("")
+
+  const handleCvvChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCvv(e.target.value.replace(/\D/g, ""))
+  }
+
+  const handleCardNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCardNumber(e.target.value.replace(/\D/g, ""))
+  }
 
   const handleExpDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let value = e.target.value.replace(/\D/g, "")
@@ -34,6 +44,8 @@ export default function PaymentPage() {
       const target = e.target as HTMLFormElement;
       target.reset();
       setExpDate("");
+      setCvv("");
+      setCardNumber("");
     }, 2000)
   }
 
@@ -62,7 +74,7 @@ export default function PaymentPage() {
               <label className="block text-sm font-medium mb-2 text-slate-300">Card Number</label>
               <div className="relative">
                 <CreditCard className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 w-5 h-5" />
-                <Input required type="text" pattern="\d{16}" title="Please enter a valid 16-digit card number" className="bg-slate-950 border-slate-800 h-12 pl-10" placeholder="0000 0000 0000 0000" maxLength={16} />
+                <Input required value={cardNumber} onChange={handleCardNumberChange} type="text" pattern="\d{16}" title="Please enter a valid 16-digit card number" className="bg-slate-950 border-slate-800 h-12 pl-10" placeholder="0000000000000000" maxLength={16} />
               </div>
             </div>
 
@@ -74,7 +86,7 @@ export default function PaymentPage() {
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">CVV / CVC</label>
-                <Input required type="text" pattern="\d{3,4}" title="Please enter a valid 3 or 4 digit security code" className="bg-slate-950 border-slate-800 h-12" placeholder="123" maxLength={4} />
+                <Input required value={cvv} onChange={handleCvvChange} type="text" pattern="\d{3,4}" title="Please enter a valid 3 or 4 digit security code" className="bg-slate-950 border-slate-800 h-12" placeholder="123" maxLength={4} />
               </div>
             </div>
 
