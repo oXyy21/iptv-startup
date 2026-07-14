@@ -43,14 +43,17 @@ export default function Home() {
           <p className="text-slate-300 text-lg max-w-2xl mx-auto">Built from the ground up to provide the fastest, most reliable streaming experience possible.</p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
           {/* Feature 1 */}
-          <Card className="bg-slate-900 border-slate-800 text-white">
-            <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+          <Card className="bg-slate-900 border-slate-800 text-white overflow-hidden group">
+            <div className="w-full h-48 overflow-hidden relative">
+              <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors z-10"></div>
+              <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&q=80&w=600&h=400" alt="4K TV screen" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-0" />
+            </div>
+            <CardContent className="p-8 flex flex-col items-center text-center h-full relative -mt-10">
+              <div className="w-16 h-16 bg-slate-900 border border-slate-800 text-lime-500 rounded-2xl flex items-center justify-center mb-6 shadow-xl relative z-20">
                 <Zap className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Raw 4K Quality</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">Raw 4K Quality</h3>
               <p className="text-slate-300">
                 Experience crystal-clear, uncompressed streams with anti-freeze technology ensuring zero buffering.
               </p>
@@ -58,12 +61,16 @@ export default function Home() {
           </Card>
 
           {/* Feature 2 */}
-          <Card className="bg-slate-900 border-slate-800 text-white">
-            <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+          <Card className="bg-slate-900 border-slate-800 text-white overflow-hidden group">
+            <div className="w-full h-48 overflow-hidden relative">
+              <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors z-10"></div>
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600&h=400" alt="Multiple screens and devices" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-0" />
+            </div>
+            <CardContent className="p-8 flex flex-col items-center text-center h-full relative -mt-10">
+              <div className="w-16 h-16 bg-slate-900 border border-slate-800 text-lime-500 rounded-2xl flex items-center justify-center mb-6 shadow-xl relative z-20">
                 <MonitorPlay className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">All Device Support</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">All Device Support</h3>
               <p className="text-slate-300">
                 Watch seamlessly on your Smart TV, Android box, Apple TV, iPhone, or PC. One account, every screen.
               </p>
@@ -71,12 +78,16 @@ export default function Home() {
           </Card>
 
           {/* Feature 3 */}
-          <Card className="bg-slate-900 border-slate-800 text-white">
-            <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+          <Card className="bg-slate-900 border-slate-800 text-white overflow-hidden group">
+            <div className="w-full h-48 overflow-hidden relative">
+              <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors z-10"></div>
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600&h=400" alt="Network servers" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-0" />
+            </div>
+            <CardContent className="p-8 flex flex-col items-center text-center h-full relative -mt-10">
+              <div className="w-16 h-16 bg-slate-900 border border-slate-800 text-lime-500 rounded-2xl flex items-center justify-center mb-6 shadow-xl relative z-20">
                 <ShieldCheck className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">99.9% Uptime</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">99.9% Uptime</h3>
               <p className="text-slate-300">
                 Our globally distributed, redundant server network guarantees your stream never drops during the big game.
               </p>
