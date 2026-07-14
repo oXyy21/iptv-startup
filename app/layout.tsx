@@ -67,6 +67,7 @@ export default function RootLayout({
             <nav className="hidden md:flex flex-1 items-center justify-center gap-6 text-sm font-medium text-slate-300">
               <Link href="/#features" className="hover:text-white transition-colors">Features</Link>
               <Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link>
+              <Link href="/setup" className="hover:text-white transition-colors">Setup Guide</Link>
               <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
               <Link href="/about" className="hover:text-white transition-colors">About</Link>
               <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
@@ -141,11 +142,12 @@ export default function RootLayout({
 
             {/* Col 3: Trust Links */}
             <div>
-              <h4 className="text-white text-lg font-bold mb-4">Legal & Trust</h4>
+              <h4 className="text-white text-lg font-bold mb-4">Support & Legal</h4>
               <ul className="space-y-2 text-sm">
+                <li><Link href="/setup" className="hover:text-lime-500 transition-colors">Setup & Installation</Link></li>
+                <li><Link href="/contact" className="hover:text-lime-500 transition-colors">Contact Support</Link></li>
                 <li><Link href="/legal" className="hover:text-lime-500 transition-colors">Terms of Service</Link></li>
                 <li><Link href="/legal" className="hover:text-lime-500 transition-colors">Privacy Policy</Link></li>
-                <li><Link href="/licenses" className="hover:text-lime-500 transition-colors">Licenses & Compliance</Link></li>
               </ul>
             </div>
 
