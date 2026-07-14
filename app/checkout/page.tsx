@@ -25,7 +25,7 @@ export default async function CheckoutPage({ searchParams }: Props) {
 
       <Card className="bg-slate-900 border-slate-800 text-white">
         <CardContent className="p-8">
-          <form className="space-y-8">
+          <form action="/payment" className="space-y-8">
             {/* Account Details */}
             <div className="space-y-4">
               <h2 className="text-xl font-bold text-lime-500">1. Account Details</h2>
