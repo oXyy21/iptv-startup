@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ShieldCheck, MonitorPlay, Zap, ShoppingCart, UserPlus, Download, PlayCircle } from "lucide-react"
+import { ShieldCheck, MonitorPlay, Zap, ShoppingCart, UserPlus, Download, PlayCircle, Tv, Smartphone, Tablet, Laptop } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "IPTV Startup | Premium 4K Streaming",
@@ -136,6 +136,58 @@ export default function Home() {
               <p className="text-slate-400 text-sm">Log in and enjoy unlimited access to channels and VODs.</p>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* 4. CTA / DEVICE SUPPORT SECTION */}
+      <section className="py-24 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 p-10 md:p-20 text-center">
+            {/* Background Glow */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-lime-500/10 via-slate-900 to-slate-950 pointer-events-none"></div>
+            
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white tracking-tight">
+                Ready to Upgrade Your <span className="text-lime-500">Entertainment?</span>
+              </h2>
+              <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
+                Join thousands of happy streamers and unlock unlimited access to the world&apos;s best content. No buffering, no contracts, pure enjoyment.
+              </p>
+              
+              <Link href="/checkout?plan=1m" className={buttonVariants({ size: "lg", className: "text-xl px-10 h-16 font-bold mb-16 shadow-[0_0_30px_-5px_rgba(132,204,22,0.4)]" })}>
+                Start Streaming Now
+              </Link>
+              
+              {/* Devices */}
+              <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-90">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-14 h-14 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 shadow-inner">
+                    <Tv className="w-7 h-7 text-slate-300" />
+                  </div>
+                  <span className="text-xs font-bold tracking-wider text-slate-400 uppercase">Smart TV</span>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-14 h-14 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 shadow-inner">
+                    <Smartphone className="w-7 h-7 text-slate-300" />
+                  </div>
+                  <span className="text-xs font-bold tracking-wider text-slate-400 uppercase">Mobile</span>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-14 h-14 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 shadow-inner">
+                    <Tablet className="w-7 h-7 text-slate-300" />
+                  </div>
+                  <span className="text-xs font-bold tracking-wider text-slate-400 uppercase">Tablet</span>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-14 h-14 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 shadow-inner">
+                    <Laptop className="w-7 h-7 text-slate-300" />
+                  </div>
+                  <span className="text-xs font-bold tracking-wider text-slate-400 uppercase">Laptop</span>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
