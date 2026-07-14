@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Metadata } from "next"
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
@@ -42,7 +43,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4 text-white">Why Choose Our Service?</h2>
           <p className="text-slate-300 text-lg max-w-2xl mx-auto">Built from the ground up to provide the fastest, most reliable streaming experience possible.</p>
         </div>
-        
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Feature 1 */}
           <Card className="bg-slate-900 border-slate-800 text-white overflow-hidden group">
             <div className="w-full h-48 overflow-hidden relative">
