@@ -40,7 +40,7 @@ export default async function CheckoutPage({ searchParams }: Props) {
               <h2 className="text-xl font-bold text-lime-500">2. Device Information</h2>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">What device will you use?</label>
-                <select className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+                <select required className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
                   <option value="">Select your device...</option>
                   <option value="smart-tv">Smart TV (Samsung/LG)</option>
                   <option value="android">Android Box / Firestick</option>
@@ -57,7 +57,7 @@ export default async function CheckoutPage({ searchParams }: Props) {
               <h2 className="text-xl font-bold text-lime-500">3. Select Package</h2>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">Subscription Plan</label>
-                <select defaultValue={plan} className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+                <select required defaultValue={plan} className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
                   <option value="12m">12 Months Premium - $59.99 (Best Value)</option>
                   <option value="6m">6 Months Premium - $49.99</option>
                   <option value="3m">3 Months Premium - $34.99</option>
@@ -66,7 +66,7 @@ export default async function CheckoutPage({ searchParams }: Props) {
               </div>
             </div>
 
-            <Button type="button" size="lg" className="w-full h-14 text-lg font-bold">
+            <Button type="submit" size="lg" className="w-full h-14 text-lg font-bold">
               Proceed to Secure Payment
             </Button>
             <p className="text-center text-sm text-slate-500">
