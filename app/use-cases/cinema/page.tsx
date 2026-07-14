@@ -2,27 +2,24 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ShieldCheck, MonitorPlay, Zap } from "lucide-react"
+import { Film, Clapperboard, PlayCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "IPTV Startup | Premium 4K Streaming",
-  description: "Experience the ultimate 4K IPTV streaming with 99.9% uptime, multi-device support, and no buffering.",
-  alternates: {
-    canonical: "/",
-  },
+  title: "Cinema IPTV | 4K Movies & VODs",
+  description: "Transform your living room into a theater. Access 100,000+ 4K movies and TV series on demand.",
 }
 
-export default function Home() {
+export default function CinemaPage() {
   return (
     <div className="flex flex-col bg-slate-950 text-white flex-1">
       
-      {/* 1. HERO SECTION */}
+      {/* HERO SECTION */}
       <section className="relative pt-32 pb-24 px-6 text-center border-b border-slate-800 flex-1 flex flex-col items-center justify-center">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white max-w-4xl mx-auto">
-          Unleash Premium IPTV on <span className="text-lime-500">Every Screen</span>
+          Your Personal <span className="text-lime-500">4K Theater</span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto">
-          Say goodbye to buffering and expensive cable bills. Enjoy raw 4K quality, instant access to 25,000+ channels, and unmatched reliability.
+          Access over 100,000 blockbuster movies, entire TV series box sets, and exclusive platform originals all in one place.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -35,11 +32,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. CORE FEATURES GRID */}
+      {/* CORE FEATURES GRID */}
       <section id="features" className="py-24 px-6 container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 text-white">Why Choose Our Service?</h2>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">Built from the ground up to provide the fastest, most reliable streaming experience possible.</p>
+          <h2 className="text-3xl font-bold mb-4 text-white">Why Cinephiles Choose Us</h2>
+          <p className="text-slate-300 text-lg max-w-2xl mx-auto">We offer the largest Video-On-Demand library updated daily with the latest releases.</p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -47,11 +44,11 @@ export default function Home() {
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
               <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
-                <Zap className="w-8 h-8" />
+                <Film className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Raw 4K Quality</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Massive VOD Library</h3>
               <p className="text-slate-300">
-                Experience crystal-clear, uncompressed streams with anti-freeze technology ensuring zero buffering.
+                Cancel your 5 different subscriptions. We have content from Netflix, Hulu, HBO, Disney, and more.
               </p>
             </CardContent>
           </Card>
@@ -60,11 +57,11 @@ export default function Home() {
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
               <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
-                <MonitorPlay className="w-8 h-8" />
+                <Clapperboard className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">All Device Support</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Daily Updates</h3>
               <p className="text-slate-300">
-                Watch seamlessly on your Smart TV, Android box, Apple TV, iPhone, or PC. One account, every screen.
+                New movies and series episodes are uploaded within hours of their official release.
               </p>
             </CardContent>
           </Card>
@@ -73,11 +70,11 @@ export default function Home() {
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
               <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
-                <ShieldCheck className="w-8 h-8" />
+                <PlayCircle className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">99.9% Uptime</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">HDR & Dolby Audio</h3>
               <p className="text-slate-300">
-                Our globally distributed, redundant server network guarantees your stream never drops during the big game.
+                Many of our VODs support 4K HDR10 and 5.1 surround sound to push your home theater to the limit.
               </p>
             </CardContent>
           </Card>

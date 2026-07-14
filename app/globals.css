@@ -46,7 +46,7 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-  --color-iptv-green: var(--iptv-green);
+  --color-lime-500: #84cc16;
 }
 
 :root {
@@ -80,9 +80,10 @@
   --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
   --sidebar-border: oklch(0.923 0.003 48.717);
   --sidebar-ring: oklch(0.709 0.01 56.259);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.147 0.004 49.25);
-  --iptv-green: #84cc16;
+  --background: #020617; /* slate-950 */
+  --foreground: #ffffff;
+  --primary: #84cc16; /* lime-500 */
+  --primary-foreground: #020617;
 }
 
 .dark {
@@ -117,7 +118,10 @@
   --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.553 0.013 58.071);
-  --iptv-green: #a3e635;
+  --background: #020617; /* slate-950 */
+  --foreground: #ffffff;
+  --primary: #84cc16; /* lime-500 */
+  --primary-foreground: #020617;
 }
 
 @layer base {
