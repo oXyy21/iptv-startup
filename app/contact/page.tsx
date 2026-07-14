@@ -1,7 +1,5 @@
 import { Metadata } from "next"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { ContactForm } from "@/components/contact-form"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
@@ -22,23 +20,7 @@ export default function ContactPage() {
         <Card className="bg-slate-900 border-slate-800 text-white">
           <CardContent className="p-8">
             <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium mb-2 text-slate-300">Name</label>
-                <Input className="bg-slate-950 border-slate-800" placeholder="John Doe" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-2 text-slate-300">Email</label>
-                <Input type="email" className="bg-slate-950 border-slate-800" placeholder="john@example.com" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-2 text-slate-300">Message</label>
-                <Textarea className="bg-slate-950 border-slate-800 min-h-[150px]" placeholder="How can we help you?" />
-              </div>
-              <Button type="button" className="w-full text-lg font-bold">
-                Send Message
-              </Button>
-            </form>
+            <ContactForm />
           </CardContent>
         </Card>
 
