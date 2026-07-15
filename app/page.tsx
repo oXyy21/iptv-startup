@@ -51,7 +51,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#060816]/80 to-[#060816] z-10"></div>
         </div>
 
-        <div className="relative z-20 max-w-5xl mx-auto flex flex-col items-center">
+        <div className="relative z-20 max-w-5xl mx-auto flex flex-col items-center mb-32 md:mb-56">
           <motion.div initial="hidden" animate="visible" variants={stagger} className="flex flex-col items-center">
             <motion.div variants={fadeIn} className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
