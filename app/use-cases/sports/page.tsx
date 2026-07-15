@@ -16,7 +16,7 @@ export default function SportsPage() {
       {/* HERO SECTION */}
       <section className="relative pt-32 pb-24 px-6 text-center border-b border-slate-800 flex-1 flex flex-col items-center justify-center">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white max-w-4xl mx-auto">
-          The Ultimate <span className="text-lime-500">Sports Fan's</span> Dream
+          The Ultimate <span className="text-[#22D3EE]">Sports Fan's</span> Dream
         </h1>
         <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto">
           From the Champions League to the UFC, watch every live event and PPV without blackouts or buffering.
@@ -43,7 +43,7 @@ export default function SportsPage() {
           {/* Feature 1 */}
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#22D3EE]/10 text-[#22D3EE] rounded-md flex items-center justify-center mb-6">
                 <Trophy className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">All Major Leagues</h3>
@@ -56,7 +56,7 @@ export default function SportsPage() {
           {/* Feature 2 */}
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#22D3EE]/10 text-[#22D3EE] rounded-md flex items-center justify-center mb-6">
                 <Calendar className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Free PPV Events</h3>
@@ -69,7 +69,7 @@ export default function SportsPage() {
           {/* Feature 3 */}
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#22D3EE]/10 text-[#22D3EE] rounded-md flex items-center justify-center mb-6">
                 <Activity className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">60FPS Low-Latency</h3>

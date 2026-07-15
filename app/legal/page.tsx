@@ -12,7 +12,7 @@ export default function LegalPage() {
       
       <div className="space-y-16">
         <section>
-          <h2 className="text-3xl font-bold text-lime-500 mb-6 border-b border-slate-800 pb-2">Terms of Service</h2>
+          <h2 className="text-3xl font-bold text-[#22D3EE] mb-6 border-b border-slate-800 pb-2">Terms of Service</h2>
           <div className="prose prose-invert max-w-none text-slate-300">
             <p><strong>Last Updated: October 2023</strong></p>
             <h3>1. Acceptance of Terms</h3>
@@ -25,7 +25,7 @@ export default function LegalPage() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold text-lime-500 mb-6 border-b border-slate-800 pb-2">Privacy Policy</h2>
+          <h2 className="text-3xl font-bold text-[#22D3EE] mb-6 border-b border-slate-800 pb-2">Privacy Policy</h2>
           <div className="prose prose-invert max-w-none text-slate-300">
             <p><strong>Last Updated: October 2023</strong></p>
             <h3>1. Data Collection</h3>

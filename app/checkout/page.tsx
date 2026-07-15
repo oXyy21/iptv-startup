@@ -28,7 +28,7 @@ export default async function CheckoutPage({ searchParams }: Props) {
           <form action="/payment" className="space-y-8">
             {/* Account Details */}
             <div className="space-y-4">
-              <h2 className="text-xl font-bold text-lime-500">1. Account Details</h2>
+              <h2 className="text-xl font-bold text-[#22D3EE]">1. Account Details</h2>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">Email Address (For login delivery)</label>
                 <Input type="email" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid full email address (e.g., yourname@gmail.com)" className="bg-slate-950 border-slate-800 h-12" placeholder="your@email.com" />
@@ -37,10 +37,10 @@ export default async function CheckoutPage({ searchParams }: Props) {
 
             {/* Device Details */}
             <div className="space-y-4">
-              <h2 className="text-xl font-bold text-lime-500">2. Device Information</h2>
+              <h2 className="text-xl font-bold text-[#22D3EE]">2. Device Information</h2>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">What device will you use?</label>
-                <select required className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+                <select required className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:ring-offset-2 focus:ring-offset-slate-950">
                   <option value="">Select your device...</option>
                   <option value="smart-tv">Smart TV (Samsung/LG)</option>
                   <option value="android">Android Box / Firestick</option>
@@ -54,10 +54,10 @@ export default async function CheckoutPage({ searchParams }: Props) {
 
             {/* Package Selection */}
             <div className="space-y-4">
-              <h2 className="text-xl font-bold text-lime-500">3. Select Package</h2>
+              <h2 className="text-xl font-bold text-[#22D3EE]">3. Select Package</h2>
               <div>
                 <label className="block text-sm font-medium mb-2 text-slate-300">Subscription Plan</label>
-                <select required defaultValue={plan} className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+                <select required defaultValue={plan} className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:ring-offset-2 focus:ring-offset-slate-950">
                   <option value="12m">12 Months Premium - $59.99 (Best Value)</option>
                   <option value="6m">6 Months Premium - $49.99</option>
                   <option value="3m">3 Months Premium - $34.99</option>

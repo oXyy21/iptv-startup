@@ -29,7 +29,7 @@ export default function ContactPage() {
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Support Hours</h3>
             <p className="text-slate-300">
-              Technical Support: <span className="text-lime-500 font-bold">24/7/365</span><br />
+              Technical Support: <span className="text-[#22D3EE] font-bold">24/7/365</span><br />
               Billing & Sales: Mon-Fri, 9am - 5pm EST
             </p>
           </div>

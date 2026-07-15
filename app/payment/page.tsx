@@ -53,7 +53,7 @@ export default function PaymentPage() {
     <div className="container mx-auto px-6 py-24 max-w-2xl">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-extrabold mb-4 text-white flex items-center justify-center gap-3">
-          <Lock className="w-8 h-8 text-lime-500" />
+          <Lock className="w-8 h-8 text-[#22D3EE]" />
           Secure Payment
         </h1>
         <p className="text-lg text-slate-400">Please enter your payment details below to complete your purchase.</p>

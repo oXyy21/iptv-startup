@@ -16,7 +16,7 @@ export default function CanadaPage() {
       {/* HERO SECTION */}
       <section className="relative pt-32 pb-24 px-6 text-center border-b border-slate-800 flex-1 flex flex-col items-center justify-center">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white max-w-4xl mx-auto">
-          The #1 IPTV Service in <span className="text-lime-500">Canada</span>
+          The #1 IPTV Service in <span className="text-[#22D3EE]">Canada</span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto">
           Finally, an IPTV provider that cares about Canadians. Enjoy localized servers, zero buffering across provinces, and transparent CAD pricing.
@@ -43,7 +43,7 @@ export default function CanadaPage() {
           {/* Feature 1 */}
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#22D3EE]/10 text-[#22D3EE] rounded-md flex items-center justify-center mb-6">
                 <Server className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Local Datacenters</h3>
@@ -56,7 +56,7 @@ export default function CanadaPage() {
           {/* Feature 2 */}
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#22D3EE]/10 text-[#22D3EE] rounded-md flex items-center justify-center mb-6">
                 <MapPin className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Canadian Content</h3>
@@ -69,7 +69,7 @@ export default function CanadaPage() {
           {/* Feature 3 */}
           <Card className="bg-slate-900 border-slate-800 text-white">
             <CardContent className="p-6 flex flex-col items-center text-center h-full">
-              <div className="w-16 h-16 bg-lime-500/10 text-lime-500 rounded-md flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#22D3EE]/10 text-[#22D3EE] rounded-md flex items-center justify-center mb-6">
                 <DollarSign className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Pay in CAD</h3>

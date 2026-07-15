@@ -35,7 +35,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <div className={`container mx-auto px-6 max-w-4xl relative z-20 flex-1 ${post.meta.image ? '-mt-32' : 'pt-32'}`}>
         
-        <Link href="/blog" className="inline-flex items-center gap-2 text-lime-500 hover:text-lime-400 font-medium mb-8 transition-colors bg-slate-950/80 px-4 py-2 rounded-full backdrop-blur border border-slate-800">
+        <Link href="/blog" className="inline-flex items-center gap-2 text-[#22D3EE] hover:text-cyan-400 font-medium mb-8 transition-colors bg-slate-950/80 px-4 py-2 rounded-full backdrop-blur border border-slate-800">
           <ArrowLeft className="w-4 h-4" /> Back to Blog
         </Link>
 
@@ -44,14 +44,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div className="flex items-center gap-4 text-slate-300 font-medium">
             {post.meta.date && (
               <span className="flex items-center gap-2 bg-slate-900 border border-slate-800 px-4 py-2 rounded-full">
-                <Calendar className="w-4 h-4 text-lime-500" />
+                <Calendar className="w-4 h-4 text-[#22D3EE]" />
                 {post.meta.date}
               </span>
             )}
           </div>
         </header>
         
-        <div className="prose prose-invert prose-lg md:prose-xl max-w-none prose-headings:text-white prose-a:text-lime-500 hover:prose-a:text-lime-400 prose-img:rounded-2xl pb-16 border-b border-slate-800">
+        <div className="prose prose-invert prose-lg md:prose-xl max-w-none prose-headings:text-white prose-a:text-[#22D3EE] hover:prose-a:text-cyan-400 prose-img:rounded-2xl pb-16 border-b border-slate-800">
           <MDXRemote source={post.content} />
         </div>
       </div>
