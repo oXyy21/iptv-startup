@@ -59,7 +59,7 @@ export default function RootLayout({
             <div className="flex-1">
               <Link href="/" className="flex items-center gap-2 group">
                 <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
-                <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-lime-500">Startup</span></span>
+                <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-primary">Startup</span></span>
               </Link>
             </div>
 
@@ -75,7 +75,7 @@ export default function RootLayout({
 
             {/* Right: Buttons */}
             <div className="flex-1 flex items-center justify-end gap-4">
-              <Link href="/checkout" className={buttonVariants({ className: "bg-lime-500 text-slate-950 hover:bg-lime-600 font-bold" })}>
+              <Link href="/checkout" className={buttonVariants({ className: "bg-primary text-primary-foreground hover:bg-primary/90 font-bold" })}>
                 Start Free Trial
               </Link>
             </div>
@@ -94,7 +94,7 @@ export default function RootLayout({
             <div>
               <Link href="/" className="flex items-center gap-2 mb-6">
                 <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
-                <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-lime-500">Startup</span></span>
+                <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-primary">Startup</span></span>
               </Link>
               <p className="text-sm mb-4">The ultimate 4K streaming experience across all your devices.</p>
               <address className="not-italic text-sm">
@@ -133,10 +133,10 @@ export default function RootLayout({
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Products</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/pricing" className="hover:text-lime-500 transition-colors">1-Month Package</Link></li>
-                <li><Link href="/pricing" className="hover:text-lime-500 transition-colors">3-Month Package</Link></li>
-                <li><Link href="/pricing" className="hover:text-lime-500 transition-colors">6-Month Package</Link></li>
-                <li><Link href="/pricing" className="hover:text-lime-500 transition-colors">12-Month Package</Link></li>
+                <li><Link href="/pricing" className="hover:text-primary transition-colors">1-Month Package</Link></li>
+                <li><Link href="/pricing" className="hover:text-primary transition-colors">3-Month Package</Link></li>
+                <li><Link href="/pricing" className="hover:text-primary transition-colors">6-Month Package</Link></li>
+                <li><Link href="/pricing" className="hover:text-primary transition-colors">12-Month Package</Link></li>
               </ul>
             </div>
 
@@ -144,10 +144,10 @@ export default function RootLayout({
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Support & Legal</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/setup" className="hover:text-lime-500 transition-colors">Setup & Installation</Link></li>
-                <li><Link href="/contact" className="hover:text-lime-500 transition-colors">Contact Support</Link></li>
-                <li><Link href="/legal" className="hover:text-lime-500 transition-colors">Terms of Service</Link></li>
-                <li><Link href="/legal" className="hover:text-lime-500 transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/setup" className="hover:text-primary transition-colors">Setup & Installation</Link></li>
+                <li><Link href="/contact" className="hover:text-primary transition-colors">Contact Support</Link></li>
+                <li><Link href="/legal" className="hover:text-primary transition-colors">Terms of Service</Link></li>
+                <li><Link href="/legal" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
               </ul>
             </div>
 
@@ -156,8 +156,8 @@ export default function RootLayout({
               <h4 className="text-white text-lg font-bold mb-4">Network Status</h4>
               <div className="flex items-center gap-3 p-4 bg-slate-900 border border-slate-800 rounded-md">
                 <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-lime-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
                 </span>
                 <span className="text-sm font-bold text-white">All Systems Operational</span>
               </div>
