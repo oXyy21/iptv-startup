@@ -58,7 +58,7 @@ export default function RootLayout({
             {/* Left: Logo */}
             <div className="flex-1">
               <Link href="/" className="flex items-center gap-2 group">
-                <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
+                <img src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full object-contain transition-transform group-hover:scale-105" />
                 <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-primary">Startup</span></span>
               </Link>
             </div>
@@ -93,7 +93,7 @@ export default function RootLayout({
             {/* Col 1: Brand */}
             <div>
               <Link href="/" className="flex items-center gap-2 mb-6">
-                <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
+                <img src="/logo.png" alt="Logo" className="w-8 h-8 rounded-full object-contain" />
                 <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-primary">Startup</span></span>
               </Link>
               <p className="text-sm mb-4">The ultimate 4K streaming experience across all your devices.</p>
