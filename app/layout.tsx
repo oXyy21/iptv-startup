@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { Toaster } from "@/components/ui/sonner";
+import { LogoLink } from "@/components/logo-link";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -57,10 +58,10 @@ export default function RootLayout({
           <div className="container mx-auto px-6 h-16 flex items-center justify-between">
             {/* Left: Logo */}
             <div className="flex-1">
-              <Link href="/" className="flex items-center gap-2 group">
-                <img src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full object-contain transition-transform group-hover:scale-105" />
-                <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-primary">Startup</span></span>
-              </Link>
+              <LogoLink 
+                className="flex items-center gap-2 group" 
+                imageClassName="w-10 h-10 rounded-full object-contain transition-transform group-hover:scale-105" 
+              />
             </div>
 
             {/* Middle: Links */}
@@ -92,10 +93,10 @@ export default function RootLayout({
           <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
             {/* Col 1: Brand */}
             <div>
-              <Link href="/" className="flex items-center gap-2 mb-6">
-                <img src="/logo.png" alt="Logo" className="w-8 h-8 rounded-full object-contain" />
-                <span className="text-xl font-extrabold text-white tracking-tight">IPTV<span className="text-primary">Startup</span></span>
-              </Link>
+              <LogoLink 
+                className="flex items-center gap-2 mb-6" 
+                imageClassName="w-8 h-8 rounded-full object-contain" 
+              />
               <p className="text-sm mb-4">The ultimate 4K streaming experience across all your devices.</p>
               <address className="not-italic text-sm">
                 123 Streaming Way<br />
