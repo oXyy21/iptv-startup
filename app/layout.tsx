@@ -134,7 +134,6 @@ export default function RootLayout({
               <h4 className="text-white text-lg font-bold mb-4">Products</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/pricing" className="hover:text-primary transition-colors">1-Month Package</Link></li>
-                <li><Link href="/pricing" className="hover:text-primary transition-colors">3-Month Package</Link></li>
                 <li><Link href="/pricing" className="hover:text-primary transition-colors">6-Month Package</Link></li>
                 <li><Link href="/pricing" className="hover:text-primary transition-colors">12-Month Package</Link></li>
               </ul>

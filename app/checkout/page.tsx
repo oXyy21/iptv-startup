@@ -60,7 +60,6 @@ export default async function CheckoutPage({ searchParams }: Props) {
                 <select required defaultValue={plan} className="flex h-12 w-full items-center justify-between rounded-md border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:ring-offset-2 focus:ring-offset-slate-950">
                   <option value="12m">12 Months Premium - $59.99 (Best Value)</option>
                   <option value="6m">6 Months Premium - $49.99</option>
-                  <option value="3m">3 Months Premium - $34.99</option>
                   <option value="1m">1 Month Premium - $14.99</option>
                 </select>
               </div>
