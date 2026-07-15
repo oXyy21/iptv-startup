@@ -304,21 +304,21 @@ export default function Home() {
           <Accordion className="w-full space-y-4">
             <AccordionItem value="item-1" className="bg-[#060816] border border-white/5 rounded-2xl px-6 border-b-0 overflow-hidden">
               <AccordionTrigger className="text-lg font-bold text-white hover:text-[#22D3EE] hover:no-underline py-6">What devices do you support?</AccordionTrigger>
-              <AccordionContent className="text-slate-400 text-base pb-6 leading-relaxed">
+              <AccordionContent className="text-white text-base pb-6 leading-relaxed">
                 We support almost every modern device including Smart TVs (Samsung, LG, Android TV), Apple TV, Amazon Fire Stick/TV, Android Boxes, iOS/Android Smartphones, and Windows/Mac computers. Detailed setup guides are provided for all devices upon purchase.
               </AccordionContent>
             </AccordionItem>
             
             <AccordionItem value="item-2" className="bg-[#060816] border border-white/5 rounded-2xl px-6 border-b-0 overflow-hidden">
               <AccordionTrigger className="text-lg font-bold text-white hover:text-[#22D3EE] hover:no-underline py-6">Do I need a VPN?</AccordionTrigger>
-              <AccordionContent className="text-slate-400 text-base pb-6 leading-relaxed">
+              <AccordionContent className="text-white text-base pb-6 leading-relaxed">
                 While a VPN is not strictly required, we highly recommend using one to prevent your ISP from throttling your connection during peak hours or live events. Our service is fully compatible with all major VPNs like ExpressVPN, NordVPN, and Surfshark.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-[#060816] border border-white/5 rounded-2xl px-6 border-b-0 overflow-hidden">
               <AccordionTrigger className="text-lg font-bold text-white hover:text-[#22D3EE] hover:no-underline py-6">Is there a money-back guarantee?</AccordionTrigger>
-              <AccordionContent className="text-slate-400 text-base pb-6 leading-relaxed">
+              <AccordionContent className="text-white text-base pb-6 leading-relaxed">
                 Yes, we offer a 7-day money-back guarantee on all our plans. If you experience technical issues that our support team cannot resolve, we will issue a full refund, no questions asked.
               </AccordionContent>
             </AccordionItem>
