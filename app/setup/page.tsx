@@ -31,7 +31,7 @@ export default function SetupGuidePage() {
           
           {/* Sidebar */}
           <div className="md:w-1/3 flex-shrink-0">
-            <div className="bg-[#0D1324] border border-white/5 rounded-2xl p-4 sticky top-24">
+            <div className="bg-[#0D1324] border border-white/5 rounded-2xl p-4 sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
               <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4 px-4 pt-2">Select Device</h3>
               <div className="space-y-2">
                 {devices.map((device) => (
